@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+//그림 파일 저장용량 계산 문제입니다.
+int main() {
+ float w, h, b; //w는 가로, h는 세로, b는 비트
+  float sum; //sum은 저장용량
+  scanf("%f %f %f", &w, &h, &b);
+  sum = (w * h * b)/8/1024/1024;//저장용량을MB 단위로 구하는 식
+  printf("%.2lf MB", sum); //저장용량을 소수점 이하 둘째 자리까지 출력
+}
+#include <stdio.h>
