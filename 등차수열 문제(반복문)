@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, d, n, i, sum;
+  scanf("%d %d %d", &a, &d, &n);
+  sum = a; //시작 값 대입
+  
+  for(i=1; i<n; i++)
+    {
+      sum += d;
+      //등차 더해서 항 계산
+    }
+  printf("%d", sum);
+  return 0;
+}
