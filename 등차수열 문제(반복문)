@@ -2,6 +2,7 @@
 
 int main(void) {
   int a, d, n, i, sum;
+  //a = 시작값, b= 등비 값,c = 몇 번째인지 나타내는 수
   scanf("%d %d %d", &a, &d, &n);
   sum = a; //시작 값 대입
   
