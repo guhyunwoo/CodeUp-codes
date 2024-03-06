@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+ long long int a, d, n, i, sum;
+  //a = 시작값, d= 등비 값,n = 몇 번째인지 나타내는 수
+  scanf("%lld %lld %lld", &a, &d, &n);
+  sum = a; //시작 값 대입  
+  
+  for(i = 1; i < n; i++)
+    {
+      sum *= d;  //이전 값에 등비 값을 곱함
+      
+    }
+  
+  
+  printf("%lld\n", sum);
+
+  return 0;
+}
