@@ -9,7 +9,7 @@ int main(void) {
   for(i=1; i<n; i++)
     {
       sum += d;
-      //등차 더해서 항 계산
+      //등차 더해서 n번째 수 계산
     }
   printf("%d", sum);
   return 0;
