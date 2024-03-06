@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//1 -1 3 -5 11 -21 43 ... 은
+//1부터 시작해 이전에 만든 수에 -2를 곱한 다음 1을 더해 다음 수를 만든 수열이다.
+//"그럼.... n번째 나오는 수는 뭘까?"
+
+int main(void) {
+ long long int a, d, n,  m, i, sum;
+  //a = 시작값, d= 더할 값,n = 몇 번째인지 나타내는 수,m = 곱할 값
+  scanf("%lld %lld %lld %lld", &a, &m, &d, &n);
+  sum = a; //시작 값 대입  
+  
+  for(i = 1; i < n; i++)
+    {
+      sum *= m;
+      sum += d;      
+    }//n번째 값을 구함
+  
+  
+  printf("%lld\n", sum);
+
+  return 0;
+}
