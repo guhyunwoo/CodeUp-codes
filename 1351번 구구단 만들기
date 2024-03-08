@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+//n~m까지의 구구단 만들기.
+int main(void) {
+  int n, m, i, j, sum = 0;
+
+  
+  scanf("%d %d", &n, &m);
+
+  
+  for(i = n; i <= m; i++)//n~m까지 반복
+    {
+      
+    for(j = 1; j <= 9; j++)//n에 1~9까지 곱하기
+    {
+      sum = 1;
+      sum = n * j;
+      printf("%d*%d=%d\n",n, j, sum);
+    }
+      
+      n++;//n++로 m까지 반복
+    }
+
+  
+  return 0;
+}
