@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main() {
+  int n, i, j, x, y;
+  int array[20][20] = {}; // 19x19 크기의 바둑판 초기화
+  
+  scanf("%d", &n);
+
+  //흰 돌의 개수 입력
+  for(i=0; i < n; i++) {
+      scanf("%d %d", &x, &y);
+      array[x][y] = 1; //흰 돌 위치 1로 표시
+    }
+//전체 바둑판 상태 출력
+  for(i = 1; i <= 19; i++){ //가로번호
+    for(j = 1; j <= 19; j++){//세로번호
+      
+      printf("%d ", array[i][j]); // 바둑판의 상태 출력
+    }
+
+     printf("\n");
+    }
+  
+    return 0;
+}
